@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Calculator</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<script src="js/app.js" type="module" defer></script>
+		<script src="js/tests.js" type="module" defer></script>
+	</head>
+	<body>
+		<div class="calculator">
+			<div class="hanger" id="swtch">Switch</div>
+			<div class="input-area">
+				<div class="input-area__history"></div>
+				<div class="input-area__input"></div>
+			</div>
+			<div class="btn-area" id="btns">
+				<button class="clear noir" id="C" data-sym="C">C</button class="op">
+				<button class="op noir" id="div" data-sym="÷">÷</button>
+				<button class="op noir" id="mul" data-sym="×">×</button>
+				<button class="del noir" id="del" data-sym="del">⌫</button>
+				<button class="num ash" id="7" data-sym="7">7</button>
+				<button class="num ash" id="8" data-sym="8">8</button>
+				<button class="num ash" id="9" data-sym="9">9</button>
+				<button class="op noir" id="sub" data-sym="−">−</button>
+				<button class="num ash" id="4" data-sym="4">4</button>
+				<button class="num ash" id="5" data-sym="5">5</button>
+				<button class="num ash" id="6" data-sym="6">6</button>
+				<button class="op noir" id="add" data-sym="+">+</button>
+				<button class="num ash" id="1" data-sym="1">1</button>
+				<button class="num ash" id="2" data-sym="2">2</button>
+				<button class="num ash" id="3" data-sym="3">3</button>
+				<button class="equal" id="equal" data-sym="=">=</button>
+				<button class="num ash" id="percent" data-sym="%">%</button>
+				<button class="num ash hid" id="bO" data-sym="(">(</button>
+				<button class="num ash" id="0" data-sym="0">0</button>
+				<button class="num ash" id="dot" data-sym=".">.</button>
+				<button class="num ash hid" id="bC" data-sym=")">)</button>
+			</div>
+		</div>
+		<footer>
+			<a
+				href="https://www.flaticon.com/free-icons/calculator"
+				title="calculator icons"
+				>Favicon created by Freepik - Flaticon</a
+			>
+			<p class="github"><a href="https://github.com/samswag01/calculator">© samswag <i class="fab fa-github"></i></a></p>
+		</footer>
+	</body>
+</html>
