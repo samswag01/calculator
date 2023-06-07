@@ -34,6 +34,9 @@ body {
     font-weight: bold;
     color: #ccc;
 }
+.hanger.active {
+    color: #E2171B;
+}
 .input-area {
     background-color: var(--input-bg);
     height: 130px;
