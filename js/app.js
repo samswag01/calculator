@@ -72,6 +72,7 @@ const Calc = {
         bC.classList.toggle('hid');
         dot.classList.toggle('hid');
         percent.classList.toggle('hid');
+        swtch.classList.toggle('active');
     },
     init() {
         const { 
