@@ -17,6 +17,7 @@ body {
     justify-content: center;
     color: var(--body-color);
     box-sizing: border-box;
+    touch-action: manipulation;
 }
 .calculator {
     margin-top: 20vh;
