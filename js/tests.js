@@ -31,5 +31,5 @@ const run = () => {
     expect("3-2-%").toBeNaN();
 }
 
-// uncomment run to run the tests
+// uncomment to run the tests
 // run();
