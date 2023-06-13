@@ -52,7 +52,7 @@ export const evalExpr = (expr) => {
 
 const Eval = {
     calculateAnswer (rpn) {
-        const { unary, add } = op
+        const { unary, add, sub } = op
         let result = [];
     
         for (let i = 0; i < rpn.length; i++) {
@@ -62,7 +62,7 @@ const Eval = {
                 let func = rpn[i]
                 result.push(func(result.pop(), result.pop()));
             } else if (rpn[i] === '%') {
-            	if (i === rpn.length - 2 && result.length > 1 && (getLast(rpn) == op.add || getLast(rpn) == op.sub)) {
+            	if (i === rpn.length - 2 && result.length > 1 && (getLast(rpn) == add || getLast(rpn) == sub)) {
             		let percent = result.pop();
             		let lastVal = getLast(result);
             		result.push((percent/100)*lastVal);
