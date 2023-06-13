@@ -4,7 +4,7 @@ import { Util } from './helper.js';
 
 const { 
     parseExpr, precise, toNumber,
-    zeroError, badExpr,
+    zeroError, badExpr, getLast,
 } = Util;
 
 const op = {
@@ -62,7 +62,13 @@ const Eval = {
                 let func = rpn[i]
                 result.push(func(result.pop(), result.pop()));
             } else if (rpn[i] === '%') {
-                result.push(result.pop() / 100);
+            	if (i === rpn.length - 2 && result.length > 1 && (getLast(rpn) == op.add || getLast(rpn) == op.sub)) {
+            		let percent = result.pop();
+            		let lastVal = getLast(result);
+            		result.push((percent/100)*lastVal);
+            	} else {
+                	result.push(result.pop() / 100);
+                }
             } else {
                 result.push(rpn[i]);
             }
